@@ -22,11 +22,35 @@ void CreatList(LinkList &L,int n)
 			printf("LinkList is Non-Decreasing!!");
 			exit(0);
 		}
+		
 		p->next=NULL;
 		q->next=p;
 		q=p;
 	}
 	
+}
+void CreatListFromFile(FILE * pReadFile, LinkList &L,int n)
+{
+	int i;
+	LinkList p,q;
+	L=(LinkList)malloc(sizeof(LNode));
+	L->data=0;
+	L->next=NULL;
+	q=L;
+	for(i=n;i>0;--i){
+		p=(LinkList)malloc(sizeof(LNode));
+		//scanf("%d",&p->data);
+		fscanf(pReadFile,"%d",&p->data);//2读文件中数据
+		if(q->data>p->data){
+			printf("LinkList is Non-Decreasing!!");
+			exit(0);
+		}
+		
+		p->next=NULL;
+		q->next=p;
+		q=p;
+	}
+
 }
 
 void printf1(LinkList L){
@@ -37,6 +61,16 @@ void printf1(LinkList L){
 		p=p->next;
 	}
 	printf("\n");
+}
+
+void printf1ToFile(FILE * pWriteFile, LinkList L){
+	LinkList p;
+	p=L->next;
+	while(p){
+		fprintf(pWriteFile,"%d -->",p->data);
+		p=p->next;
+	}
+	fprintf(pWriteFile,"\n");
 }
 
 void MergeList(LinkList &La,LinkList &Lb,LinkList  &Lc){
@@ -65,18 +99,41 @@ void MergeList(LinkList &La,LinkList &Lb,LinkList  &Lc){
 int main(){
 	int s,m;
 	LinkList Lc,La,Lb;
-	printf("Enter the number of La:\n");
-	scanf("%d",&s);
-	CreatList(La,s);
+//	printf("Enter the number of La:\n");
+//	scanf("%d",&s);
+//	CreatList(La,s);
+//	printf1(La);
+//    printf("Enter the number of Lb:\n");
+//	scanf("%d",&m);
+//	CreatList(Lb,m);
+//	printf1(Lb);
+//	printf("After Merge List:\n");
+//	MergeList(La,Lb,Lc);
+//	printf1(Lc);
+	
+	FILE *pReadFile=fopen("LinkList.dat","r");//1打开文件data
+	FILE *pWriteFile=fopen("LinkList.res","w");//1打开文件result
+	if(!pReadFile){
+		printf("Read LinkList.dat failed!");
+		exit(0);
+	}
+	printf("Read the number of La from file LinkList.dat and create it:\n");
+	fscanf(pReadFile, "%d", &s);//2 读文件中数据
+	CreatListFromFile(pReadFile,La,s);
 	printf1(La);
-    printf("Enter the number of Lb:\n");
-	scanf("%d",&m);
-	CreatList(Lb,m);
+	printf1ToFile(pWriteFile,La);
+	printf("Read the number of Lb from file LinkList.dat and create it:\n");
+	fscanf(pReadFile, "%d", &m);//2 读文件中数据
+	CreatListFromFile(pReadFile,Lb,m);
 	printf1(Lb);
+	printf1ToFile(pWriteFile,Lb);
 	printf("After Merge List:\n");
+	fprintf(pWriteFile,"After Merge List:\n");
 	MergeList(La,Lb,Lc);
 	printf1(Lc);
-	
+	printf1ToFile(pWriteFile,Lc);
+	fclose(pReadFile);//3关闭文件
+	fclose(pWriteFile);//3关闭文件
 	return 0;
 }
 
