@@ -1,9 +1,13 @@
 #include<stdio.h>
 #include<malloc.h>
 #include <math.h >
+#include"ThreadBTree.h"
+
 #define  MaxSize 20
-typedef int ElemType;
 #define OK 1
+
+//typedef int ElemType;
+
 typedef struct BiTNode
 {
 	ElemType data;
@@ -97,8 +101,8 @@ void Translever(BiTNode *T)
 		if(p->rchild)
 		{
 			printf("%c ",p->rchild->data);
-			queue.vec[queue.f]=p->rchild;
-			queue.f=queue.f+1;
+			queue.vec[queue.r]=p->rchild;
+			queue.r=queue.r+1;
 		}
 	}
 	printf("\n");
@@ -121,8 +125,7 @@ void Disptree(BiTNode *T)
 	}
 }
 
-int main()
-{
+void testBTree(){
 	BiTree T=NULL;
 	int j;
 	int sign = 1;
@@ -206,5 +209,11 @@ int main()
 			printf("程序运行结束，按任意键退出!\n");
 		}
 	}
+}
+
+int main()
+{
+	testThreadBTree();
+//	testBTree();
 	return 0;
 }
