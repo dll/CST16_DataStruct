@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<malloc.h>
 #include <math.h >
+
 #define  MaxSize 20
 typedef int ElemType;
 #define OK 1
@@ -33,6 +34,29 @@ void CreateBiTree(BiTree *T)
 		printf("产生左右子树。\n");
 		CreateBiTree(&((*T)->lchild)) ;                           
 		CreateBiTree(&((*T)->rchild))  ;                           
+	}
+}
+void CreateBiTreeFromFile(BiTree *T, FILE *pf)
+{
+	char ch;
+	fscanf(pf,"%c",&ch);
+	//getchar();/*回车键（每次输入一个字符后，需敲回车键）*/
+	if(ch=='#')
+	{
+		printf("不产生子树%c\n",ch);
+		*T=NULL;
+	}
+	else
+	{
+		if(!(*T=(BiTNode *)malloc(sizeof(BiTNode))))
+		{
+			printf("分配空间失败");
+			return;
+		}//生成一个新节点
+		(*T)->data = ch;
+		printf("产生左右子树%c\n",ch);
+		CreateBiTreeFromFile(&((*T)->lchild),pf) ;                           
+		CreateBiTreeFromFile(&((*T)->rchild),pf)  ;                           
 	}
 }
 
@@ -93,13 +117,78 @@ void Preorder(BiTree T)
 		Preorder(T->rchild);                              
 	}
 }
-
+typedef struct{
+	BiTree data[MaxSize];
+	int top;
+}SeqStack;
+void InitStack(SeqStack *S) /*初始栈*/
+{
+	S->top=-1;
+}
+int StackEmpty(SeqStack *S) /*判栈空*/
+{
+	return S->top==-1;
+}
+int StackFull(SeqStack *S) /*判栈满*/
+{
+	return S->top==MaxSize-1;
+}
+void Push(SeqStack *S, BiTree x) /*进栈*/
+{
+	if(StackFull(S))
+		printf("栈已满\n"); /*上溢退出*/
+	else S->data[++S->top]=x; /*栈顶指针加1后将x进栈*/
+}
+BiTree Pop(SeqStack *S) /*出栈*/
+{
+	if (StackEmpty(S))
+		printf("Stack underflow"); /*下溢退出*/
+	else return S->data[S->top--]; /*栈顶指针返回后将栈顶指针减1*/
+}
+BiTree StackTop(SeqStack *S) /*取栈顶元素*/
+{
+	if (StackEmpty(S))
+		printf("栈已空\n");
+	return S->data[S->top];
+}
+void RecursionPreorder(BiTree T){
+	
+	BiTree p;
+	SeqStack *S=(SeqStack*)malloc(sizeof(SeqStack));
+	InitStack(S);
+	Push(S,T); /*根指针进栈*/
+	printf("\n\n非递归前序遍历二叉树:\n");
+	while(!StackEmpty(S)){
+		while(p=StackTop(S)){ 
+			printf("%c ",p->data); /*访问入栈结点的数据域*/
+			Push(S,p->lchild); /*向左走到尽头*/
+		}
+		p=Pop(S); /*空指针退栈*/
+		if (!StackEmpty(S)) /*输出结点，向右一步*/
+		{
+			p=Pop(S);
+			Push(S,p->rchild);
+		}
+	}
+	free(S);
+	printf("\n");
+}
+//void Preorder(BiTree T)
+//{
+//	if(T)
+//	{
+//		printf("%c ",T->data);
+//		Preorder(T->lchild);                                
+//		Preorder(T->rchild);                              
+//	}
+//}
 int main()
 {
 	BiTree T=NULL,T1=NULL;
 	int j;
 	int sign = 1;
 	int num;
+	FILE *pf=NULL;
 	count=0;
 	printf("本程序可以建立二叉树、求二叉树的结点个数、高度、叶子结点个数，交换二叉树的左右子树，复制一棵二叉树。\n");
 	printf("请将二叉树的先序序列输入以建立二叉树。\n");
@@ -118,9 +207,12 @@ int main()
 		{
 		case 1:
 			printf("生成二叉树:");
-			CreateBiTree(&T); 
+//			CreateBiTree(&T); 
+			pf=fopen("btree.txt","r");
+			if(!pf){printf("读btree.txt文件失败！\n");exit(0);}
+			CreateBiTreeFromFile(&T, pf);
 			printf("\n");
-			printf("\n");
+			fclose(pf);
 			break;
 		case 2:
 			if(T)
@@ -173,6 +265,7 @@ int main()
 			{
 				printf("二叉树的遍历序列为：");
 				Preorder(T);
+				RecursionPreorder(T);
 				printf("\n");
 			}
 			else printf("二叉树为空!\n");
