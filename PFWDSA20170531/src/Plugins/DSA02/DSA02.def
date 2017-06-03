@@ -1,0 +1,32 @@
+;PFWDSA plugin interface file DSA02.def
+LIBRARY "DSA02"
+EXPORTS
+
+DSAInterface @021
+gVersion DATA
+GetPluginVersion @022
+gInterface DATA
+GetPluginInterface @023
+
+InitSeqList
+InitSeqList2
+SeqListInsert
+SeqListDelete
+SeqListPrint
+SeqListPrint2
+RandElem
+RandArray
+UnionSeqList
+LocateSeqListElem
+SeqListEdit
+ReadSeqList
+SeqListSave
+GetSeqListElem
+ClearSeqList
+GetSeqListLength
+
+ElemTypeCmp
+LocateSeqListElem2
+UnionSeqList2
+MoveOddEven
+InitSeqList3

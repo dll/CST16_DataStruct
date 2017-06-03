@@ -1,0 +1,23 @@
+;PFWDSA plugin interface file DSATestServices.def
+
+LIBRARY "DSATestServices"
+
+EXPORTS
+
+RandInt
+RandIntArray
+RandDouble
+RandDoubleArray
+
+TimeClock
+RandCharArray
+PrintiArray
+PrintdArray
+PrintcArray
+
+ICmp
+CCmp
+DCmp
+FCmp
+
+VSwap

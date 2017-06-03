@@ -1,0 +1,6 @@
+LIBRARY bguess
+EXPORTS
+
+Init @02
+Goodbye @03
+MakeNumber @04

@@ -1,0 +1,20 @@
+;PFWDSA plugin interface file DSA04.def
+LIBRARY "DSA04"
+EXPORTS
+
+DSAInterface @041
+gVersion DATA
+GetPluginVersion @042
+gInterface DATA
+GetPluginInterface @043
+
+CreatePolynFromFile
+AddPoly
+PrintPolyn
+IsExistElem
+InsAfter
+SelectSortPoly
+DestroyPoly
+cmp
+SavePolyn
+IsEqualPoly

@@ -1,0 +1,37 @@
+;PFWDSA plugin interface file DSA10.def
+
+LIBRARY "DSA10"
+
+EXPORTS
+
+DSAInterface @101
+gVersion DATA
+GetPluginVersion @102
+gInterface DATA
+GetPluginInterface @103
+
+CreateAdjMatrixGraph @1
+CreateAdjMatrixGraphFromFile @2
+PrintAdjMatrixGraph  @3
+FindAdjVex @31
+CreateAdjLinkListGraph  @4
+CreateAdjLinkListGraphFromFile @5
+PrintAdjLinkListGraph @6
+VisitedAdjLinkListGraphDFS @7
+DFSVisitGraph @8
+VisitedAdjLinkListGraphBFS @9
+BFSVisitGraph @10
+
+Seek
+KruskalMST
+cmp
+
+PrimMST
+
+CreateAdjMatrixGraphDijkstra
+PrintAdjMatrixGraphDijkstra
+Dijkstra
+
+CreateAdjMatrixGraphFloyd
+PrintAdjMatrixGraphFloyd
+Floyd

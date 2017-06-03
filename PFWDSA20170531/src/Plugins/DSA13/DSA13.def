@@ -1,0 +1,11 @@
+;PFWDSA plugin interface file DSA13.def
+
+LIBRARY "DSA13"
+
+EXPORTS
+
+DSAInterface @131
+gVersion DATA
+GetPluginVersion @132
+gInterface DATA
+GetPluginInterface @133

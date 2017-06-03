@@ -1,0 +1,73 @@
+;PFWDSA plugin  erface file DSA09.def
+
+;将头文件的函数声明拷贝，并使用(.*);   
+;替换去掉函数名后面的参数列表和分号
+;2012-11-14
+
+LIBRARY "DSA09"
+EXPORTS
+
+DSAInterface @091
+gVersion DATA
+GetPluginVersion @092
+gInterface DATA
+GetPluginInterface @093
+
+GetSBTreeHigh
+LevelTraverseTree 
+LevelPrintTree 
+LevelPrintTree1 
+LevelPrintTree2 
+LevelPrintTree3 
+CreateSeqBinTree 
+CreateSeqBinTreeFromFile
+
+InitLinkStack 
+LinkPush 
+LinkPop 
+EmptyLinkStack 
+DestroyLinkBinTree 
+RChild 
+LChild 
+CreateLinkBinTree 
+GetLBTreeHigh 
+PreOrderNuReserveTraverse 
+CreateDLRLDR
+
+OutTextXY 
+DrawRect 
+DrawLine 
+GetMaxX 
+GetMaxY 
+Max 
+PostOrder 
+PrintTree 
+DeleteNodeX 
+SearchNode 
+InsertRightNode 
+InsertLeftNode 
+PrintBinTree 
+InitQueue 
+EnQueue 
+DrawTree 
+DeQueue 
+
+HuffmanCoding 
+HuffmanCoding2 
+HuffmanCoding3 
+EncodeHC 
+ReleaseHuffCode 
+DecodeHC 
+HuffmanCoding4 
+
+InitCSTree  
+DestroyCSTree 
+CreateCSTree 
+PrintCSTree 
+DestroyCSTree 
+
+LBTRChild
+LBTLChild
+InputFromKeyboard
+InputFromFile
+Visit

@@ -1,0 +1,10 @@
+DSAInterface
+猜数游戏
+DSA00.dll
+DSA00.txt
+PFWDSA/bin/Plugins
+1.0.0
+206004刘东良
+2012-09-19
+http://code.google.com/p/2011gisdsa/
+猜数游戏，实现粗略提示、折半提示、机器猜数、得分统计、限次猜数的多种功能

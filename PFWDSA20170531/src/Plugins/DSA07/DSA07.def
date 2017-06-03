@@ -1,0 +1,42 @@
+;PFWDSA plugin  erface file DSA07.def
+
+;将头文件的函数声明拷贝，并使用(.*); 
+;替换去掉函数名后面的参数列表和分号
+;2012-11-14
+
+LIBRARY "DSA07"
+EXPORTS
+
+DSAInterface @071
+gVersion DATA
+GetPluginVersion @072
+gInterface DATA
+GetPluginInterface @073
+
+InitSeqStack 
+GetSeqTop 
+SeqPush 
+SeqPop 
+EmptySeqStack 
+PrintSeqStack 
+Match 
+
+InitLinkStack 
+GetLinkTop 
+LinkPush 
+GetLinkTop 
+LinkPush 
+LinkPop 
+EmptyLinkStack 
+PrintLinkStack 
+Palindrome 
+
+InitSeqCycleQueue 
+GetSeqQueueFront 
+EnSeqCycleQueue 
+OutSeqCycleQueue 
+EmptySeqCycleQueue 
+PrintSeqCycleQueue 
+PlusMinusQueue 
+myPlusMinusQueue 
+PlusMinusQueueFromFile 

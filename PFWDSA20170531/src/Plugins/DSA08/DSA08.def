@@ -1,0 +1,32 @@
+;PFWDSA plugin  erface file DSA08.def
+
+;将头文件的函数声明拷贝，并使用(.*); 
+;替换去掉函数名后面的参数列表和分号
+;2012-11-14
+
+LIBRARY "DSA08"
+EXPORTS
+
+DSAInterface @081
+gVersion DATA
+GetPluginVersion @082
+gInterface DATA
+GetPluginInterface @083
+
+CreateTSL
+PrintTupleSeqList
+Translate
+
+SubString
+SplitStrServe
+CreateGL
+GetGLDepth
+PrintGL
+CopyGL
+GetGLHead
+GetGLTail
+
+CreateAcrossLinker
+PrintAcrossLinker
+PreNode
+MatrixAdd

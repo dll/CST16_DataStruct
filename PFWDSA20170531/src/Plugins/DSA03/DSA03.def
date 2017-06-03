@@ -1,0 +1,20 @@
+;PFWDSA plugin interface file DSA03.def
+
+LIBRARY "DSA03"
+
+EXPORTS
+
+DSAInterface @031
+gVersion DATA
+GetPluginVersion @032
+gInterface DATA
+GetPluginInterface @033
+
+PrintLinkList
+CreateLinkList
+ClearLinkList
+DeleteLinkListElem
+InsertLinkListElem
+GetLinkListElem
+
+ElemTypeCmp

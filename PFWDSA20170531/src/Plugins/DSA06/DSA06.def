@@ -1,0 +1,34 @@
+;PFWDSA plugin interface file DSA06.def
+
+;将头文件的函数声明拷贝，并使用(.*);
+;替换去掉函数名后面的参数列表和分号
+;2012-11-14
+
+LIBRARY "DSA06"
+EXPORTS
+
+DSAInterface @061
+gVersion DATA
+GetPluginVersion @062
+gInterface DATA
+GetPluginInterface @063
+
+InitSeqString 
+SeqStringAssign 
+PrintSeqString 
+StringBFIndex 
+
+GetNext 
+GetNextValue 
+StringKMPIndex 
+StringKMPIndex2 
+
+MaxComSubStr 
+
+InitLinkString 
+LinkStringAssign 
+PrintLinkString 
+LinkStrBFSeek 
+
+FirstUpr 
+DestroyLinkString 

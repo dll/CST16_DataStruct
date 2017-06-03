@@ -1,0 +1,14 @@
+;PFWDSA plugin interface file DSA01.def
+
+LIBRARY "DSA01"
+
+EXPORTS
+
+DSAInterface @011
+
+gVersion DATA
+GetPluginVersion @012
+gInterface DATA
+GetPluginInterface @013
+
+DSABubbleSort @014

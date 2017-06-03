@@ -1,0 +1,10 @@
+DSAInterface
+串
+DSA06.dll
+DSA06.txt
+PFWDSA/bin/Plugins
+1.0.0
+206004刘东良
+2012-11-14
+http://code.google.com/p/2011gisdsa/
+顺序串、链串及BF、KMP模式匹配算法演示

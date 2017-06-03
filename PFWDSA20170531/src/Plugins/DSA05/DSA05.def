@@ -1,0 +1,39 @@
+;PFWDSA plugin interface file DSA05.def
+
+LIBRARY "DSA05"
+
+EXPORTS
+
+DSAInterface @051
+gVersion DATA
+GetPluginVersion @052
+gInterface DATA
+GetPluginInterface @053
+
+RandInt
+ReadStudents
+ReadCities
+ConfusionStudents
+ConfusionCities
+IntiLBSJosepusGame
+LBSJosepusGame
+OutPutLBSJoseGame
+OutPutLBSJoseGameScreen
+gotoxy
+RePlayLBSJoseGame
+SelectSortStudID
+DestroyPolyStud
+DestroyPolyCity
+DestroyPolyJoseGame
+LBSJoseGameApp
+
+ReadSubjects
+ConfusionSubjects
+JosepusTestPaper
+OutPutTestPaper
+OutPutTestPaperDP
+SelectSortPolyStudID
+SelectSortPolySubID
+JoseTestPaperApp
+DestroyPolySubject
+DestroyPolyJose
