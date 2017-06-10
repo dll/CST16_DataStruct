@@ -1,0 +1,479 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>SortSearch: Referencia del Archivo BTree.cpp</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">SortSearch
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Generado por Doxygen 1.7.5.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#define-members">'defines'</a> &#124;
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo BTree.cpp</div>  </div>
+</div>
+<div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="_b_tree_8h_source.html">BTree.h</a>&quot;</code><br/>
+<code>#include &lt;stdlib.h&gt;</code><br/>
+<code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;assert.h&gt;</code><br/>
+<code>#include &lt;math.h&gt;</code><br/>
+</div><table class="memberdecls">
+<tr><td colspan="2"><h2><a name="define-members"></a>
+'defines'</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_b_tree_8cpp.html#affe776513b24d84b39af8ab0930fef7f">max</a>(a, b)&#160;&#160;&#160;(((a) &gt; (b)) ? (a) : (b))</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_b_tree_8cpp.html#a7377cc956f5c81538f0fbf0a0492a539">debug_print</a>(fmt,...)</td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_b_tree_8cpp.html#a01a61828b930d5a8d2254b0036f04f97">disk_write</a> (<a class="el" href="struct_b_t_node.html">BTNode</a> *node)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_b_tree_8cpp.html#a4ccc866fed8f831ddce37517eb24f4c5">disk_read</a> (<a class="el" href="struct_b_t_node.html">BTNode</a> **node)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_b_tree_8cpp.html#a2d09b7c3c1a941c337a0800c8230316d">BTree_print</a> (<a class="el" href="_b_tree_8h.html#ae55f949c41be2e5a63ca0939dfb55443">BTree</a> tree, int her)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_b_tree_8cpp.html#ae05dd4e266d3e188f5ed6b9fd234c377">BTree_split_child</a> (<a class="el" href="struct_b_t_node.html">BTNode</a> *parent, int index, <a class="el" href="struct_b_t_node.html">BTNode</a> *node)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_b_tree_8cpp.html#af6e8f0a71a860e0af4bbca1681e032d4">BTree_insert_nonfull</a> (<a class="el" href="struct_b_t_node.html">BTNode</a> *node, int key)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_b_tree_8cpp.html#af27750867a21784cdace03792bcaf245">BTree_insert</a> (<a class="el" href="_b_tree_8h.html#ae55f949c41be2e5a63ca0939dfb55443">BTree</a> *tree, int key)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_b_tree_8cpp.html#acba49f79ae38ddfb209a7d5b9edd57a7">BTree_merge_child</a> (<a class="el" href="_b_tree_8h.html#ae55f949c41be2e5a63ca0939dfb55443">BTree</a> *tree, <a class="el" href="struct_b_t_node.html">BTNode</a> *node, int index)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_b_tree_8cpp.html#a730b69505287c049cb19598b6dcffd96">BTree_remove</a> (<a class="el" href="_b_tree_8h.html#ae55f949c41be2e5a63ca0939dfb55443">BTree</a> *tree, int key)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_b_t_node.html">BTNode</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_b_tree_8cpp.html#a9daf02215a62843107ed6a5c998b6cd3">BTree_search</a> (const <a class="el" href="_b_tree_8h.html#ae55f949c41be2e5a63ca0939dfb55443">BTree</a> tree, int key, int *pos)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_b_tree_8cpp.html#a4e2454119c4eebbecc1bd89f7973fec1">BTree_create</a> (<a class="el" href="_b_tree_8h.html#ae55f949c41be2e5a63ca0939dfb55443">BTree</a> *tree, const int *data, int length)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_b_tree_8cpp.html#af29602d21c0654b3a480e0abb2b68aa3">BTree_destory</a> (<a class="el" href="_b_tree_8h.html#ae55f949c41be2e5a63ca0939dfb55443">BTree</a> *tree)</td></tr>
+</table>
+<hr/><h2>Documentación de los 'defines'</h2>
+<a class="anchor" id="a7377cc956f5c81538f0fbf0a0492a539"></a><!-- doxytag: member="BTree.cpp::debug_print" ref="a7377cc956f5c81538f0fbf0a0492a539" args="(fmt,...)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define debug_print</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fmt, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="affe776513b24d84b39af8ab0930fef7f"></a><!-- doxytag: member="BTree.cpp::max" ref="affe776513b24d84b39af8ab0930fef7f" args="(a, b)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define max</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">a, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">b&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;(((a) &gt; (b)) ? (a) : (b))</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Documentación de las funciones</h2>
+<a class="anchor" id="a4e2454119c4eebbecc1bd89f7973fec1"></a><!-- doxytag: member="BTree.cpp::BTree_create" ref="a4e2454119c4eebbecc1bd89f7973fec1" args="(BTree *tree, const int *data, int length)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BTree_create </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_b_tree_8h.html#ae55f949c41be2e5a63ca0939dfb55443">BTree</a> *&#160;</td>
+          <td class="paramname"><em>tree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af29602d21c0654b3a480e0abb2b68aa3"></a><!-- doxytag: member="BTree.cpp::BTree_destory" ref="af29602d21c0654b3a480e0abb2b68aa3" args="(BTree *tree)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BTree_destory </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_b_tree_8h.html#ae55f949c41be2e5a63ca0939dfb55443">BTree</a> *&#160;</td>
+          <td class="paramname"><em>tree</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af27750867a21784cdace03792bcaf245"></a><!-- doxytag: member="BTree.cpp::BTree_insert" ref="af27750867a21784cdace03792bcaf245" args="(BTree *tree, int key)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BTree_insert </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_b_tree_8h.html#ae55f949c41be2e5a63ca0939dfb55443">BTree</a> *&#160;</td>
+          <td class="paramname"><em>tree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="af6e8f0a71a860e0af4bbca1681e032d4"></a><!-- doxytag: member="BTree.cpp::BTree_insert_nonfull" ref="af6e8f0a71a860e0af4bbca1681e032d4" args="(BTNode *node, int key)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BTree_insert_nonfull </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_b_t_node.html">BTNode</a> *&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="acba49f79ae38ddfb209a7d5b9edd57a7"></a><!-- doxytag: member="BTree.cpp::BTree_merge_child" ref="acba49f79ae38ddfb209a7d5b9edd57a7" args="(BTree *tree, BTNode *node, int index)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BTree_merge_child </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_b_tree_8h.html#ae55f949c41be2e5a63ca0939dfb55443">BTree</a> *&#160;</td>
+          <td class="paramname"><em>tree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_b_t_node.html">BTNode</a> *&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2d09b7c3c1a941c337a0800c8230316d"></a><!-- doxytag: member="BTree.cpp::BTree_print" ref="a2d09b7c3c1a941c337a0800c8230316d" args="(BTree tree, int her)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BTree_print </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_b_tree_8h.html#ae55f949c41be2e5a63ca0939dfb55443">BTree</a>&#160;</td>
+          <td class="paramname"><em>tree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>her</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a730b69505287c049cb19598b6dcffd96"></a><!-- doxytag: member="BTree.cpp::BTree_remove" ref="a730b69505287c049cb19598b6dcffd96" args="(BTree *tree, int key)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BTree_remove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="_b_tree_8h.html#ae55f949c41be2e5a63ca0939dfb55443">BTree</a> *&#160;</td>
+          <td class="paramname"><em>tree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9daf02215a62843107ed6a5c998b6cd3"></a><!-- doxytag: member="BTree.cpp::BTree_search" ref="a9daf02215a62843107ed6a5c998b6cd3" args="(const BTree tree, int key, int *pos)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_b_t_node.html">BTNode</a>* BTree_search </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="_b_tree_8h.html#ae55f949c41be2e5a63ca0939dfb55443">BTree</a>&#160;</td>
+          <td class="paramname"><em>tree</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>pos</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae05dd4e266d3e188f5ed6b9fd234c377"></a><!-- doxytag: member="BTree.cpp::BTree_split_child" ref="ae05dd4e266d3e188f5ed6b9fd234c377" args="(BTNode *parent, int index, BTNode *node)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BTree_split_child </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_b_t_node.html">BTNode</a> *&#160;</td>
+          <td class="paramname"><em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_b_t_node.html">BTNode</a> *&#160;</td>
+          <td class="paramname"><em>node</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a4ccc866fed8f831ddce37517eb24f4c5"></a><!-- doxytag: member="BTree.cpp::disk_read" ref="a4ccc866fed8f831ddce37517eb24f4c5" args="(BTNode **node)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void disk_read </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_b_t_node.html">BTNode</a> **&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a01a61828b930d5a8d2254b0036f04f97"></a><!-- doxytag: member="BTree.cpp::disk_write" ref="a01a61828b930d5a8d2254b0036f04f97" args="(BTNode *node)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void disk_write </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_b_t_node.html">BTNode</a> *&#160;</td>
+          <td class="paramname"><em>node</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>&apos;typedefs&apos;</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generado el Sábado, 3 de Junio de 2017 22:02:09 para SortSearch por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.5.1
+</small></address>
+
+</body>
+</html>

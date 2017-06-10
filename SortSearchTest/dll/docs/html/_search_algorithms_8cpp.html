@@ -1,0 +1,599 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>SortSearch: Referencia del Archivo SearchAlgorithms.cpp</title>
+
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">SortSearch
+   
+   </div>
+   
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- Generado por Doxygen 1.7.5.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Página&#160;principal</span></a></li>
+      <li><a href="annotated.html"><span>Clases</span></a></li>
+      <li class="current"><a href="files.html"><span>Archivos</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Buscar" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Lista&#160;de&#160;archivos</span></a></li>
+      <li><a href="globals.html"><span>Miembros&#160;de&#160;los&#160;ficheros</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#define-members">'defines'</a> &#124;
+<a href="#func-members">Funciones</a>  </div>
+  <div class="headertitle">
+<div class="title">Referencia del Archivo SearchAlgorithms.cpp</div>  </div>
+</div>
+<div class="contents">
+<div class="textblock"><code>#include &lt;stdlib.h&gt;</code><br/>
+<code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;memory.h&gt;</code><br/>
+<code>#include &lt;assert.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="_search_algorithms_8h_source.html">SearchAlgorithms.h</a>&quot;</code><br/>
+</div><table class="memberdecls">
+<tr><td colspan="2"><h2><a name="define-members"></a>
+'defines'</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_search_algorithms_8cpp.html#ae505904b8ae39c437bf28e5f6ee79ada">DEBUG_SEARCH</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_search_algorithms_8cpp.html#a7377cc956f5c81538f0fbf0a0492a539">debug_print</a>(fmt,...)&#160;&#160;&#160;printf(fmt, ## __VA_ARGS__)</td></tr>
+<tr><td colspan="2"><h2><a name="func-members"></a>
+Funciones</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_search_algorithms_8cpp.html#a26fb58b316799dff96fe82db5b6103a7">sequential_search</a> (const int *array, int length, int key)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_search_algorithms_8cpp.html#ae8b34d35fe84ae510a6f1d52ba94effa">binary_search</a> (const int *array, int length, int key)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_search_algorithms_8cpp.html#a2b40bf9153bd0f9241119b6d92ed640d">blocking_search</a> (const int *array, int length, <a class="el" href="struct_index_node.html">IndexNode</a> *indexTable, int indexTableLength, int key)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_search_algorithms_8cpp.html#a274fdd5a1affe88815031b19f8b6bdac">hash_remiander</a> (int key, int tableLength)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_search_algorithms_8cpp.html#a9e7ab20da1b6e21c0f0ba9211e3566b7">hash_multi_round_off</a> (int key, int tableLength)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_search_algorithms_8cpp.html#ad03cafb33f142925560e1912c8754eba">hash_double</a> (int key, int tableLength)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_search_algorithms_8cpp.html#adc109ee684c58d753c38531ac88c561a">create_open_address_hash_table</a> (int *table, int tableLength, const int *data, int dataLength, <a class="el" href="_search_algorithms_8h.html#a33bf6ebfddac54f7ced869400f9b6dad">Hash_Function</a> hashFunc, <a class="el" href="_search_algorithms_8h.html#a5a03cc576457ad016159ca8a88925201">Conflict_Resolution</a> confictResolution, int zeroValue)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_search_algorithms_8cpp.html#aae2a0ffc239e795b54a519b6c9cbd401">open_address_hash_search</a> (int key, const int *table, int tableLength, <a class="el" href="_search_algorithms_8h.html#a33bf6ebfddac54f7ced869400f9b6dad">Hash_Function</a> hashFunc, <a class="el" href="_search_algorithms_8h.html#a5a03cc576457ad016159ca8a88925201">Conflict_Resolution</a> confictResolution, int zeroValue)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_search_algorithms_8cpp.html#a3c2fb0e4ece78a8c25c28043fccb7698">create_link_hash_table</a> (<a class="el" href="struct_hash___node.html">Hash_Node</a> **pTable, int tableLength, const int *data, int dataLength, <a class="el" href="_search_algorithms_8h.html#a33bf6ebfddac54f7ced869400f9b6dad">Hash_Function</a> hashFunc, int zeroValue)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_search_algorithms_8cpp.html#a9a1b0e8fd6f8a59ed9f3e95ff2f7fc40">destroy_link_hash_table</a> (<a class="el" href="struct_hash___node.html">Hash_Node</a> *table, int tableLength)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_search_algorithms_8cpp.html#a8f488941f8b14072049f6346405028fb">link_hash_search</a> (int key, const <a class="el" href="struct_hash___node.html">Hash_Node</a> *table, int tableLength, <a class="el" href="_search_algorithms_8h.html#a33bf6ebfddac54f7ced869400f9b6dad">Hash_Function</a> hashFunc, int zeroValue)</td></tr>
+</table>
+<hr/><h2>Documentación de los 'defines'</h2>
+<a class="anchor" id="a7377cc956f5c81538f0fbf0a0492a539"></a><!-- doxytag: member="SearchAlgorithms.cpp::debug_print" ref="a7377cc956f5c81538f0fbf0a0492a539" args="(fmt,...)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define debug_print</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">fmt, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;printf(fmt, ## __VA_ARGS__)</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ae505904b8ae39c437bf28e5f6ee79ada"></a><!-- doxytag: member="SearchAlgorithms.cpp::DEBUG_SEARCH" ref="ae505904b8ae39c437bf28e5f6ee79ada" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DEBUG_SEARCH</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>Documentación de las funciones</h2>
+<a class="anchor" id="ae8b34d35fe84ae510a6f1d52ba94effa"></a><!-- doxytag: member="SearchAlgorithms.cpp::binary_search" ref="ae8b34d35fe84ae510a6f1d52ba94effa" args="(const int *array, int length, int key)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int binary_search </td>
+          <td>(</td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>array</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Ëã·šÃû³Æ £º¶þ·Ö²éÕÒ Ëã·šÃèÊö £ºŽÓ±íµÄÒ»¶Ë¿ªÊŒ£¬Ë³ÐòÉšÃèÏßÐÔ±í£¬ÒÀŽÎœ«ÉšÃèµœµÄœáµã¹ØŒü×ÖºÍ žø¶šÖµ key Ïà±ÈœÏ¡£Èôµ±Ç°ÉšÃèµœµÄœáµã¹ØŒü×ÖÓë key ÏàµÈ£¬Ôò ²éÕÒ³É¹Š£»ÈôÉšÃèœáÊøºó£¬ÈÔÎŽÕÒµœ¹ØŒü×ÖµÈÓÚ key µÄœáµã£¬Ôò ²éÕÒÊ§°Ü¡£ Ê±ŒäžŽÔÓ¶È £ºO(lgn) ¿ÕŒäžŽÔÓ¶È £ºO(1) Ç°ÖÃÌõŒþ £ºŽýÅÅÐòÐòÁÐ±ØÐëÓÐÐò ·µ»ØÖµ : ³É¹ŠÊ±·µ»ØœáµãµÄÎ»ÖÃ£¬Ê§°ÜÊ±·µ»Ø -1 </p>
+
+</div>
+</div>
+<a class="anchor" id="a2b40bf9153bd0f9241119b6d92ed640d"></a><!-- doxytag: member="SearchAlgorithms.cpp::blocking_search" ref="a2b40bf9153bd0f9241119b6d92ed640d" args="(const int *array, int length, IndexNode *indexTable, int indexTableLength, int key)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int blocking_search </td>
+          <td>(</td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>array</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_index_node.html">IndexNode</a> *&#160;</td>
+          <td class="paramname"><em>indexTable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indexTableLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3c2fb0e4ece78a8c25c28043fccb7698"></a><!-- doxytag: member="SearchAlgorithms.cpp::create_link_hash_table" ref="a3c2fb0e4ece78a8c25c28043fccb7698" args="(Hash_Node **pTable, int tableLength, const int *data, int dataLength, Hash_Function hashFunc, int zeroValue)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void create_link_hash_table </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_hash___node.html">Hash_Node</a> **&#160;</td>
+          <td class="paramname"><em>pTable</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tableLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dataLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_search_algorithms_8h.html#a33bf6ebfddac54f7ced869400f9b6dad">Hash_Function</a>&#160;</td>
+          <td class="paramname"><em>hashFunc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>zeroValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adc109ee684c58d753c38531ac88c561a"></a><!-- doxytag: member="SearchAlgorithms.cpp::create_open_address_hash_table" ref="adc109ee684c58d753c38531ac88c561a" args="(int *table, int tableLength, const int *data, int dataLength, Hash_Function hashFunc, Conflict_Resolution confictResolution, int zeroValue)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void create_open_address_hash_table </td>
+          <td>(</td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>table</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tableLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dataLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_search_algorithms_8h.html#a33bf6ebfddac54f7ced869400f9b6dad">Hash_Function</a>&#160;</td>
+          <td class="paramname"><em>hashFunc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_search_algorithms_8h.html#a5a03cc576457ad016159ca8a88925201">Conflict_Resolution</a>&#160;</td>
+          <td class="paramname"><em>confictResolution</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>zeroValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9a1b0e8fd6f8a59ed9f3e95ff2f7fc40"></a><!-- doxytag: member="SearchAlgorithms.cpp::destroy_link_hash_table" ref="a9a1b0e8fd6f8a59ed9f3e95ff2f7fc40" args="(Hash_Node *table, int tableLength)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void destroy_link_hash_table </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_hash___node.html">Hash_Node</a> *&#160;</td>
+          <td class="paramname"><em>table</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tableLength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad03cafb33f142925560e1912c8754eba"></a><!-- doxytag: member="SearchAlgorithms.cpp::hash_double" ref="ad03cafb33f142925560e1912c8754eba" args="(int key, int tableLength)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int hash_double </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tableLength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9e7ab20da1b6e21c0f0ba9211e3566b7"></a><!-- doxytag: member="SearchAlgorithms.cpp::hash_multi_round_off" ref="a9e7ab20da1b6e21c0f0ba9211e3566b7" args="(int key, int tableLength)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int hash_multi_round_off </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tableLength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a274fdd5a1affe88815031b19f8b6bdac"></a><!-- doxytag: member="SearchAlgorithms.cpp::hash_remiander" ref="a274fdd5a1affe88815031b19f8b6bdac" args="(int key, int tableLength)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int hash_remiander </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tableLength</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8f488941f8b14072049f6346405028fb"></a><!-- doxytag: member="SearchAlgorithms.cpp::link_hash_search" ref="a8f488941f8b14072049f6346405028fb" args="(int key, const Hash_Node *table, int tableLength, Hash_Function hashFunc, int zeroValue)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int link_hash_search </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="struct_hash___node.html">Hash_Node</a> *&#160;</td>
+          <td class="paramname"><em>table</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tableLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_search_algorithms_8h.html#a33bf6ebfddac54f7ced869400f9b6dad">Hash_Function</a>&#160;</td>
+          <td class="paramname"><em>hashFunc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>zeroValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aae2a0ffc239e795b54a519b6c9cbd401"></a><!-- doxytag: member="SearchAlgorithms.cpp::open_address_hash_search" ref="aae2a0ffc239e795b54a519b6c9cbd401" args="(int key, const int *table, int tableLength, Hash_Function hashFunc, Conflict_Resolution confictResolution, int zeroValue)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int open_address_hash_search </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>table</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>tableLength</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_search_algorithms_8h.html#a33bf6ebfddac54f7ced869400f9b6dad">Hash_Function</a>&#160;</td>
+          <td class="paramname"><em>hashFunc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="_search_algorithms_8h.html#a5a03cc576457ad016159ca8a88925201">Conflict_Resolution</a>&#160;</td>
+          <td class="paramname"><em>confictResolution</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>zeroValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a26fb58b316799dff96fe82db5b6103a7"></a><!-- doxytag: member="SearchAlgorithms.cpp::sequential_search" ref="a26fb58b316799dff96fe82db5b6103a7" args="(const int *array, int length, int key)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int sequential_search </td>
+          <td>(</td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>array</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>length</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>key</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Ëã·šÃû³Æ £ºË³Ðò²éÕÒ Ëã·šÃèÊö £ºŽÓ±íµÄÒ»¶Ë¿ªÊŒ£¬Ë³ÐòÉšÃèÏßÐÔ±í£¬ÒÀŽÎœ«ÉšÃèµœµÄœáµã¹ØŒü×ÖºÍ žø¶šÖµ key Ïà±ÈœÏ¡£Èôµ±Ç°ÉšÃèµœµÄœáµã¹ØŒü×ÖÓë key ÏàµÈ£¬Ôò ²éÕÒ³É¹Š£»ÈôÉšÃèœáÊøºó£¬ÈÔÎŽÕÒµœ¹ØŒü×ÖµÈÓÚ key µÄœáµã£¬Ôò ²éÕÒÊ§°Ü¡£ Ê±ŒäžŽÔÓ¶È £ºO(n)£¬ÆœŸùÊ±ŒäžŽÔÓ¶ÈÎª n/2 ¿ÕŒäžŽÔÓ¶È £ºO(0) Ç°ÖÃÌõŒþ £ºÎÞ ·µ»ØÖµ : ³É¹ŠÊ±·µ»ØœáµãµÄÎ»ÖÃ£¬Ê§°ÜÊ±·µ»Ø -1 </p>
+
+</div>
+</div>
+</div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Todo</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Clases</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Archivos</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Funciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>&apos;typedefs&apos;</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Valores de enumeraciones</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>&apos;defines&apos;</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generado el Sábado, 3 de Junio de 2017 22:02:09 para SortSearch por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.7.5.1
+</small></address>
+
+</body>
+</html>
